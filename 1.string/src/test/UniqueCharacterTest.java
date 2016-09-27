@@ -1,9 +1,9 @@
-package a.string.test;
+package test;
 
 import org.junit.Test;
 import static org.junit.Assert.assertEquals;
 
-import a.string.algorithm.UniqueCharacter;
+import algorithm.UniqueCharacter;
 
 public class UniqueCharacterTest {
 	@Test

@@ -1,4 +1,4 @@
-package a.string.algorithm;
+package algorithm;
 
 public class UniqueCharacter {
 	public boolean isUniqueCharacterSet (String str) {
