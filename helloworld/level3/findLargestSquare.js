@@ -11,14 +11,14 @@ function findLargestSquare(board) {
 }
 
 function findSquare(board, i, j, depth, obj) {
-    console.log('start ::: i :: ' + i + ' j :: ' + j);
-    /*console.log('start ::: depth :: ' + depth);
+    /*console.log('start ::: i :: ' + i + ' j :: ' + j);
+    console.log('start ::: depth :: ' + depth);
     console.log('start ::: i+depth :: ' + (i+depth) + ' j+depth :: ' + (j+depth));*/
     if((i+depth) > board.length || (j+depth) > board.length) {
-        console.log('end ::: i :: ' + i + ' j :: ' + j);
-        /*console.log('end ::: depth :: ' + depth);
-        console.log('end ::: i+depth :: ' + (i+depth) + ' j+depth :: ' + (j+depth));*/
-        console.log('end area :::', obj.area);
+        /*console.log('end ::: i :: ' + i + ' j :: ' + j);
+        console.log('end ::: depth :: ' + depth);
+        console.log('end ::: i+depth :: ' + (i+depth) + ' j+depth :: ' + (j+depth));
+        console.log('end area :::', obj.area);*/
         return;
     }
     if(board[i][j] === 'X') {
@@ -27,7 +27,7 @@ function findSquare(board, i, j, depth, obj) {
         var is_square = false;
         for (var k = i; k < (i+depth); k++) {
             for (var l = j; l < (j+depth); l++) {
-                console.log('i :::', k + '  ' + 'j :::', l + ' board[i][j] :::', board[k][l]);
+                /*console.log('i :::', k + '  ' + 'j :::', l + ' board[i][j] :::', board[k][l]);*/
                 if(board[k][l]==='O') {
                     is_square = true;
                 } else {
@@ -41,10 +41,10 @@ function findSquare(board, i, j, depth, obj) {
         }
         if (is_square === true) {
             obj.area = depth * depth;
-            console.log('obj.area :::', obj.area);
+            /*console.log('obj.area :::', obj.area);*/
             findSquare(board, i, j, depth+1, obj);
         } else {
-            console.log('return area :::', obj.area);
+            /*console.log('return area :::', obj.area);*/
             return;
         }
     }
