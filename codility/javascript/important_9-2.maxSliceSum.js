@@ -53,9 +53,7 @@ function solution(A) {
 }
 
 /*console.log(solution([5,3,-4,6,4]));*/
-/*
-console.log(solution([3,2,-6,4,0]));*/
-console.log(solution([-5,-2,-1,-3,-4]));
 
-// 음수일때는 최대값
-//
+console.log(solution([3,2,-6,4,0]));
+/*console.log(solution([-5,-2,-1,-3,-4]));*/
+
