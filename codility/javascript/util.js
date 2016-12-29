@@ -1,6 +1,7 @@
 module.exports = {
     log: log,
     logP2: logP2,
+    logP3: logP3,
     makeArray: makeArray,
     makePermArray: makePermArray
 };
@@ -20,6 +21,16 @@ function logP2(func, input1, input2) {
     var start = new Date().getTime();
     console.log('input  :::', input1, input2);
     console.log('result :::', func(input1, input2));
+    var end = new Date().getTime();
+    console.log('time   :::', (end-start)+'ms');
+    console.log('-------------[End]--------------');
+}
+
+function logP3(func, input1, input2, input3) {
+    console.log('-------------[Start]--------------');
+    var start = new Date().getTime();
+    console.log('input  :::', input1, input2, input3);
+    console.log('result :::', func(input1, input2, input3));
     var end = new Date().getTime();
     console.log('time   :::', (end-start)+'ms');
     console.log('-------------[End]--------------');
